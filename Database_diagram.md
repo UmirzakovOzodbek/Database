@@ -25,7 +25,7 @@ CREATE TABLE comments
 
 CREATE TABLE favorites
 (
-    id          varchar(255) not null,
+    id          serial primary key,
     user_id     int          not null,
     articles_id int          not null,
     created_at  date         not null,
@@ -34,7 +34,7 @@ CREATE TABLE favorites
 
 CREATE TABLE follows
 (
-    id              varchar(255) not null,
+    id              serial primary key,
     followable_id   int          not null,
     followable_type varchar(255) not null,
     follower_id     int          not null,
@@ -46,7 +46,7 @@ CREATE TABLE follows
 
 CREATE TABLE taggings
 (
-    id            varchar(255) not null,
+    id            serial primary key,
     tag_id        int          not null,
     taggable_id   int          not null,
     taggeble_type varchar(255) not null,
@@ -58,14 +58,14 @@ CREATE TABLE taggings
 
 CREATE TABLE tags
 (
-    id             varchar(255) not null,
+    id             serial primary key,
     name           varchar(255) not null,
-    taggongs_count int          not null,
+    taggongs_count int          not null
 );
 
 CREATE TABLE users
 (
-    id                     varchar(255) not null,
+    id                     serial primary key,
     email                  varchar(255) not null,
     encrypted_password     varchar(255) not null,
     reset_password_token   varchar(255) not null,
