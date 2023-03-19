@@ -93,7 +93,10 @@ ALTER TABLE tags ADD CONSTRAINT fk_rails_taggings_tags FOREIGN KEY (id) REFERENC
 
 # Diagram
 ![Снимок экрана 2023-03-19 224048](https://user-images.githubusercontent.com/122611764/226197890-a6e5d113-60dc-4809-8ebe-fc6e1b9813bc.png)
+
+## PDF format
+[Untitled.pdf](https://github.com/UmirzakovOzodbek/Database/files/11011925/Untitled.pdf)
+
 ## dbdiagram.io
 ![image](https://user-images.githubusercontent.com/122611764/226198036-1e013dd3-1a03-4aba-bb1b-222a033fa7a9.png)
-[Untitled.pdf](https://github.com/UmirzakovOzodbek/Database/files/11011925/Untitled.pdf)
 
