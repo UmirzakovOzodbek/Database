@@ -90,12 +90,17 @@ ALTER TABLE users ADD CONSTRAINT fk_rails_favorites_users FOREIGN KEY (id) REFER
 ALTER TABLE articles ADD CONSTRAINT fk_rails_favorites_articles FOREIGN KEY (id) REFERENCES favorites (articles_id);
 ALTER TABLE tags ADD CONSTRAINT fk_rails_taggings_tags FOREIGN KEY (id) REFERENCES taggings (tag_id);
 ```
+____
 
 # Diagram
 ![Снимок экрана 2023-03-19 224048](https://user-images.githubusercontent.com/122611764/226197890-a6e5d113-60dc-4809-8ebe-fc6e1b9813bc.png)
 
+____
+
 ## PDF format
 [Untitled.pdf](https://github.com/UmirzakovOzodbek/Database/files/11011925/Untitled.pdf)
+
+____
 
 ## dbdiagram.io
 ![image](https://user-images.githubusercontent.com/122611764/226198036-1e013dd3-1a03-4aba-bb1b-222a033fa7a9.png)
