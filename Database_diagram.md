@@ -1,5 +1,5 @@
-#dbdiagram
-"""sql
+# dbdiagram
+```sql
 CREATE TABLE articles
 (
     id              serial primary key ,
@@ -89,5 +89,6 @@ ALTER TABLE articles ADD CONSTRAINT fk_rails_articles_articles FOREIGN KEY (id) 
 ALTER TABLE users ADD CONSTRAINT fk_rails_favorites_users FOREIGN KEY (id) REFERENCES favorites (user_id);
 ALTER TABLE articles ADD CONSTRAINT fk_rails_favorites_articles FOREIGN KEY (id) REFERENCES favorites (articles_id);
 ALTER TABLE tags ADD CONSTRAINT fk_rails_taggings_tags FOREIGN KEY (id) REFERENCES taggings (tag_id);
-"""
-"C:\Users\user\OneDrive\Изображения\Снимки экрана\Снимок экрана 2023-03-19 224048.png"
+```
+![Снимок экрана 2023-03-19 224048](https://user-images.githubusercontent.com/122611764/226197890-a6e5d113-60dc-4809-8ebe-fc6e1b9813bc.png)
+
